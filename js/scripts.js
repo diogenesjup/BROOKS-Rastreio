@@ -125,9 +125,11 @@ function initGeolocation(){
 
                     console.log("Coordenadas foram obtidas sem maiores problemas.");
                     
+                    carregarMapa();
+
                     setInterval(function(){
 
-                        carregarMapa();
+                      carregarMapa();    
        
                      }, 20.0*1000); 
 
