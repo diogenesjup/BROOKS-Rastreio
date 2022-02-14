@@ -1,0 +1,304 @@
+/*
+	DIOGENES JUNIOR
+	CONTATO@DIOGENESJUNIOR.COM.BR
+	
+*/
+
+/*--------------------------------- 
+	RESETS
+-----------------------------------*/
+
+html,body{
+    height: 100%;
+}
+body{
+	overflow-x: hidden;
+    background:#fff;
+}
+
+@media(max-width: 540px){
+  html,body{
+    max-width: 100% !important;
+    
+  }
+}
+
+/*---------------------------------
+	IMPORTS E CONSULTAS E MOBILE
+	
+XS = < 544px
+SM = > 544px
+MD = > 768px
+LG = > 992px
+XL = > 1200px
+
+CSS GRID
+-----------------------------------*/
+
+
+.wow {
+   visibility: hidden;
+}
+::selection { background: #757575; color: #fff; } ::-moz-selection { background: #757575; color: #fff; }
+
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*---------------------------------
+  HEADER
+-----------------------------------*/
+header{
+  position: relative;
+  display: block;
+  background: #19232d;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+header .logo{
+  text-align: left;
+}
+
+header .logo img{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*---------------------------------
+	CORPO
+-----------------------------------*/
+section.mapa-rastreio{
+  position: relative;
+  display: block;
+  background: #f2f2f2;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+section.mapa-rastreio .area-infos{
+   position:absolute;
+   display: block;
+   width:650px;
+   height: auto;
+   padding: 35px;
+   background: #fff;
+   color: #19232d;
+   border-radius: 14px;
+   z-index: 9;
+   top:100px;
+   right: 14%;
+   box-shadow: 0px 6px 9px rgb(0 0 0 / 20%);
+}
+
+section.mapa-rastreio .area-infos h1{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+#mapa{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+@media(max-width: 540px){
+  section.mapa-rastreio .area-infos {
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: auto;
+    padding: 35px;
+    background: #fff;
+    color: #19232d;
+    border-radius: 14px;
+    z-index: 9;
+    top: auto;
+    bottom: 100px;
+    right: 4%;
+    box-shadow: 0px 6px 9px rgb(0 0 0 / 20%);
+}
+section.mapa-rastreio .area-infos h1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+section.mapa-rastreio .area-infos p{
+  font-size: 14px;
+  color: #747474;
+}
+}
+
+/*---------------------------------
+	FOOTER
+-----------------------------------*/
+footer{
+  position: relative;
+  display: block;
+  background: #19232d;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 16px;
+}
+
+footer .logo{
+  text-align: left;
+}
+
+footer .logo img{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  margin-top:12px;
+}
+
+
+footer .lojas-apps{
+  text-align: right;
+  padding-top: 20px;
+}
+
+footer .lojas-apps img{
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  margin-top: -1.5px;
+  margin-left: 13px;
+  display: inline-block;
+  float: right;
+}
+
+footer .lojas-apps span{
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+}
+
+@media(max-width: 540px){
+  footer .lojas-apps {
+    text-align: left;
+    padding-top: 20px;
+}
+}
+
+
+/*---------------------------------
+  AVISOS
+-----------------------------------*/
+.modal-avisos{
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left: 0;
+  z-index: 9;
+  background: rgba(000,000,000,0.35);
+  -webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;transition:all 300ms ease;
+}
+
+.modal-avisos .aviso{
+    position: absolute;
+    display: block;
+    bottom: -300%;
+    height: auto;
+    max-height: 92%;
+    overflow-y: scroll;
+    background: #fff;
+    left: 50%;
+    /* margin-left: auto; */
+    margin-left: -300px;
+    width: 600px;
+    border-radius: 15px;
+    z-index: 999991;
+    padding: 20px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.modal-avisos .aviso::-webkit-scrollbar-track {
+          background-color: #F4F4F4;
+      }
+.modal-avisos .aviso::-webkit-scrollbar {
+          width: 0px;
+          background: #F4F4F4;
+      }
+.modal-avisos .aviso::-webkit-scrollbar-thumb {
+          background: #ccc;
+      }
+
+
+
+@media(max-width:540px){
+  .modal-avisos .aviso{
+    position: absolute;
+    display: block;
+    bottom: -300%;
+    height: auto;
+    max-height: 92%;
+    overflow-y: scroll;
+    background: #fff;
+    left: 50%;
+    /* margin-left: auto; */
+    margin-left: -45%;
+    width: 90%;
+    border-radius: 15px;
+    z-index: 999991;
+    padding: 20px;
+  }
+}
+
+
+.modal-avisos .aviso h3{
+    font-weight: bold;
+    color: #000;
+    margin-top: 1px;
+    margin-bottom: 3px;
+    line-height: 1.15em;
+    font-size: 20px;
+}
+
+
+.modal-avisos .aviso p{
+   color: #292929;
+   font-size: 13px;
+   line-height: 19px;
+   margin-bottom: 6px;
+   padding-left: 0px;
+   margin-top:11px;
+}
+
+.modal-avisos .btn-primary{
+  height: 42px;
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+
